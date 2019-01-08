@@ -210,6 +210,7 @@ cisco_nxos_show_module.template, .*, cisco_nxos, sh[[ow]] mod[[ule]]
 cisco_nxos_show_clock.template, .*, cisco_nxos, sh[[ow]] clo[[ck]]
 cisco_nxos_show_vlan.template, .*, cisco_nxos, sh[[ow]] vl[[an]]
 cisco_nxos_show_fex.template, .*, cisco_nxos, sh[[ow]] fex
+cisco_nxos_show_vdc.template, .*, cisco_nxos, sh[[ow]] vdc
 cisco_nxos_show_vpc.template, .*, cisco_nxos, sh[[ow]] vpc
 cisco_nxos_show_vrf.template, .*, cisco_nxos, sh[[ow]] vrf
 
