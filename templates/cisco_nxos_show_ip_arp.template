@@ -7,7 +7,7 @@ Start
   ^Address\s+Age\s+MAC Address\s+Interface -> Start_record
 
 Start_record
-  ^${IP_ADDRESS}\s+${AGE}\s+${MAC_ADDRESS}\s+${INTERFACE} -> Record
+  ^${IP_ADDRESS}\s+${AGE}\s+${MAC_ADDRESS}\s+${INTERFACE_NAME} -> Record
   ^\s+$$
   ^$$
   ^.* -> Error "LINE NOT FOUND"
