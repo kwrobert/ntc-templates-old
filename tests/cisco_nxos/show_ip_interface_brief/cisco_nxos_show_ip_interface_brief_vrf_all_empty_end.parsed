@@ -1,0 +1,7 @@
+---
+parsed_sample:
+
+- {interface: "Vlan2059", ip: "10.92.5.2", vrf: "default", protocol_status: "up", link_status: "up", admin_status: "up"}
+- {interface: "Lo0", ip: "10.92.4.3", vrf: "default", protocol_status: "up", link_status: "up", admin_status: "up"}
+- {interface: "Po1136", ip: "10.92.2.109", vrf: "default", protocol_status: "up", link_status: "up", admin_status: "up"}
+- {interface: "Vlan2505", ip: "10.32.72.220", vrf: "services", protocol_status: "up", link_status: "up", admin_status: "down"}

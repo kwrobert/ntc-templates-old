@@ -1,0 +1,10 @@
+Value Required INTERFACE (\w+)
+Value Filldown VRF (\w+) 
+Value PROTOCOL_STATUS (protocol-(up|down))
+Value LINK_STATUS (link-(up|down))
+Value ADMIN_STATUS (admin-(up|down))
+Value IP (\d+\.\d+\.\d+\.\d+)
+
+Start
+  ^IP Interface Status for VRF "${VRF}" -> Continue.NoRecord
+  ^${INTERFACE}\s${IP}\s${PROTOCOL_STATUS}/${LINK_STATUS}/${ADMIN_STATUS} -> Next.Record
