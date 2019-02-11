@@ -8,7 +8,7 @@ Value IP_ADDRESS (\d+\.\d+\.\d+\.\d+)
 Value IP_SUBNET (\d+\.\d+\.\d+\.\d+\/\d+)
 
 Start
-  ^IP Interface Status for VRF "${VRF}" -> Continue.NoRecord
-  ^${INTERFACE},\sInterface\sStatus:\sprotocol-${PROTOCOL_STATE}\/link-${LINK_STATE}\/admin-${ADMIN_STATE} -> Continue.NoRecord
-  ^\sIP\saddress:\s${IP_ADDRESS},\sIP\ssubnet:\s${IP_SUBNET} -> Continue.NoRecord
-  ^\sIP\sbroadcast\saddress:\s${BROADCAST_ADDRESS} -> Next.Record
+  ^IP Interface Status for VRF "${VRF}" -> Next.NoRecord
+  ^${INTERFACE},\sInterface\s(S|s)tatus:\sprotocol-${PROTOCOL_STATE}\/link-${LINK_STATE}\/admin-${ADMIN_STATE} -> Next.NoRecord
+  ^\s+IP\saddress:\s${IP_ADDRESS},\sIP\ssubnet:\s${IP_SUBNET} -> Next.NoRecord
+  ^\s+IP\sbroadcast\saddress:\s${BROADCAST_ADDRESS} -> Next.Record
