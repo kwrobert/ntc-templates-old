@@ -1,0 +1,90 @@
+IP Interface Status for VRF "default"
+Vlan2060, Interface status: protocol-up/link-up/admin-up, iod: 242,
+  IP address: 10.92.21.33, IP subnet: 10.92.21.32/27
+  IP broadcast address: 255.255.255.255
+  IP multicast groups locally joined: 
+      224.0.0.18  
+  IP MTU: 1500 bytes (using link MTU)
+  IP primary address route-preference: 0, tag: 0
+  IP proxy ARP : disabled
+  IP Local Proxy ARP : disabled
+  IP multicast routing: disabled
+  IP icmp redirects: disabled
+  IP directed-broadcast: disabled 
+  IP Forwarding: disabled 
+  IP icmp unreachables (except port): disabled
+  IP icmp port-unreachable: enabled
+  IP unicast reverse path forwarding: none
+  IP load sharing: none 
+  IP interface statistics last reset: never
+  IP interface software stats: (sent/received/forwarded/originated/consumed)
+    Unicast packets    : 36/242/5/31/267
+    Unicast bytes      : 3552/18521/390/3162/20043
+    Multicast packets  : 0/136800173/0/0/136783354
+    Multicast bytes    : 0/6292891796/0/0/4377067328
+    Broadcast packets  : 0/0/0/0/0
+    Broadcast bytes    : 0/0/0/0/0
+    Labeled packets    : 0/0/0/0/0
+    Labeled bytes      : 0/0/0/0/0
+  WCCP Redirect outbound: disabled
+  WCCP Redirect inbound: disabled
+  WCCP Redirect exclude: disabled
+loopback0, Interface status: protocol-up/link-up/admin-up, iod: 186,
+  IP address: 10.92.4.3, IP subnet: 10.92.4.3/32
+  IP broadcast address: 255.255.255.255
+  IP multicast groups locally joined: none
+  IP MTU: 1500 bytes (using link MTU)
+  IP primary address route-preference: 0, tag: 0
+  IP proxy ARP : disabled
+  IP Local Proxy ARP : disabled
+  IP multicast routing: disabled
+  IP icmp redirects: enabled
+  IP directed-broadcast: disabled 
+  IP Forwarding: disabled 
+  IP icmp unreachables (except port): disabled
+  IP icmp port-unreachable: enabled
+  IP unicast reverse path forwarding: none
+  IP load sharing: none 
+  IP interface statistics last reset: never
+  IP interface software stats: (sent/received/forwarded/originated/consumed)
+    Unicast packets    : 0/0/0/0/327974495
+    Unicast bytes      : 0/0/0/0/114616207214
+    Multicast packets  : 2/0/0/2/0
+    Multicast bytes    : 1480/0/0/1480/0
+    Broadcast packets  : 0/0/0/0/0
+    Broadcast bytes    : 0/0/0/0/0
+    Labeled packets    : 0/0/0/0/0
+    Labeled bytes      : 0/0/0/0/0
+  WCCP Redirect outbound: disabled
+  WCCP Redirect inbound: disabled
+  WCCP Redirect exclude: disabled
+port-channel100, Interface status: protocol-up/link-up/admin-up, iod: 177,
+  IP address: 10.92.2.46, IP subnet: 10.92.2.44/30
+  IP broadcast address: 255.255.255.255
+  IP multicast groups locally joined: 
+      224.0.0.5  
+  IP MTU: 1500 bytes (using link MTU)
+  IP primary address route-preference: 0, tag: 0
+  IP proxy ARP : disabled
+  IP Local Proxy ARP : disabled
+  IP multicast routing: disabled
+  IP icmp redirects: disabled
+  IP directed-broadcast: disabled 
+  IP Forwarding: disabled 
+  IP icmp unreachables (except port): disabled
+  IP icmp port-unreachable: enabled
+  IP unicast reverse path forwarding: none
+  IP load sharing: none 
+  IP interface statistics last reset: never
+  IP interface software stats: (sent/received/forwarded/originated/consumed)
+    Unicast packets    : 83913036/10139965/0/83913046/10023296
+    Unicast bytes      : 7221128985/1856655384/0/7221129825/1818950778
+    Multicast packets  : 14222597/14222725/0/14222597/14222725
+    Multicast bytes    : 1450706350/1194708896/0/1450706350/1194708896
+    Broadcast packets  : 0/0/0/0/0
+    Broadcast bytes    : 0/0/0/0/0
+    Labeled packets    : 0/0/0/0/0
+    Labeled bytes      : 0/0/0/0/0
+  WCCP Redirect outbound: disabled
+  WCCP Redirect inbound: disabled
+  WCCP Redirect exclude: disabled

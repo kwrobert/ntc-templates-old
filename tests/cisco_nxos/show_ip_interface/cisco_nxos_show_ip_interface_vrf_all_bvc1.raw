@@ -1,0 +1,64 @@
+IP Interface Status for VRF "default"
+Vlan2059, Interface status: protocol-up/link-up/admin-up, iod: 142,
+  IP address: 10.92.5.2, IP subnet: 10.92.5.0/24
+  IP broadcast address: 255.255.255.255
+  IP multicast groups locally joined: 
+      224.0.0.18  
+  IP MTU: 1500 bytes (using link MTU)
+  IP primary address route-preference: 0, tag: 0
+  IP proxy ARP : disabled
+  IP Local Proxy ARP : disabled
+  IP multicast routing: disabled
+  IP icmp redirects: disabled
+  IP directed-broadcast: disabled 
+  IP Forwarding: disabled 
+  IP icmp unreachables (except port): disabled
+  IP icmp port-unreachable: enabled
+  IP unicast reverse path forwarding: none
+  IP load sharing: none 
+  IP interface statistics last reset: never
+  IP interface software stats: (sent/received/forwarded/originated/consumed)
+    Unicast packets    : 3057466214/3263610304/509/3057466056/438597124
+    Unicast bytes      : 366401751008/533672771012/150425/366401625139/43848569952
+    Multicast packets  : 0/4/0/0/4
+    Multicast bytes    : 0/184/0/0/128
+    Broadcast packets  : 0/6/0/0/0
+    Broadcast bytes    : 0/360/0/0/0
+    Labeled packets    : 0/0/0/0/0
+    Labeled bytes      : 0/0/0/0/0
+  WCCP Redirect outbound: disabled
+  WCCP Redirect inbound: disabled
+  WCCP Redirect exclude: disabled
+
+IP Interface Status for VRF "management"
+
+IP Interface Status for VRF "services"
+Vlan2505, Interface status: protocol-down/link-down/admin-down, iod: 266,
+  IP address: 10.32.72.220, IP subnet: 10.32.72.208/28
+  IP broadcast address: 255.255.255.255
+  IP multicast groups locally joined: none
+  IP MTU: 1500 bytes (using link MTU)
+  IP primary address route-preference: 0, tag: 0
+  IP proxy ARP : disabled
+  IP Local Proxy ARP : disabled
+  IP multicast routing: disabled
+  IP icmp redirects: disabled
+  IP directed-broadcast: disabled 
+  IP Forwarding: disabled 
+  IP icmp unreachables (except port): disabled
+  IP icmp port-unreachable: enabled
+  IP unicast reverse path forwarding: none
+  IP load sharing: none 
+  IP interface statistics last reset: never
+  IP interface software stats: (sent/received/forwarded/originated/consumed)
+    Unicast packets    : 65/254/0/85/250
+    Unicast bytes      : 6154/13092/0/7834/11156
+    Multicast packets  : 4001/4219/0/4001/3976
+    Multicast bytes    : 344654/286800/0/344654/271228
+    Broadcast packets  : 0/0/0/0/0
+    Broadcast bytes    : 0/0/0/0/0
+    Labeled packets    : 0/0/0/0/0
+    Labeled bytes      : 0/0/0/0/0
+  WCCP Redirect outbound: disabled
+  WCCP Redirect inbound: disabled
+  WCCP Redirect exclude: disabled

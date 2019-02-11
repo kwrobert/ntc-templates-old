@@ -1,0 +1,19 @@
+---
+parsed_sample:
+
+- vrf: "default"
+  interface: "Vlan2059"
+  protocol_status: "up"
+  link_status: "up"
+  admin_status: "up"
+  ip_address: "10.92.5.2"
+  ip_subnet: "10.92.5.0/24"
+  broadcast_address: "255.255.255.255"
+- vrf: "services"
+  interface: "Vlan2505"
+  protocol_status: "down"
+  link_status: "down"
+  admin_status: "down"
+  ip_address: "10.32.72.220"
+  ip_subnet: "10.32.72.208/28"
+  broadcast_address: "255.255.255.255"
