@@ -21,10 +21,12 @@ Value List SSP_MODEL_MATE (\S+)
 Value List SSP_STATUS_MATE (\S+)
 Value List INTERFACES_CONTEXT (\S+)
 Value List INTERFACES (\S+)
+Value List INTERFACES_IP (\d+\.\d+\.\d+\.\d+)
 Value List INTERFACES_STATUS (.+?)
 Value List INTERFACES_STATE (\S+)
 Value List INTERFACES_CONTEXT_MATE (\S+)
 Value List INTERFACES_MATE (\S+)
+Value List INTERFACES_IP_MATE (\d+\.\d+\.\d+\.\d+)
 Value List INTERFACES_STATUS_MATE (.+?)
 Value List INTERFACES_STATE_MATE (\S+)
 
@@ -45,32 +47,29 @@ Start
   ^Serial\s+Number
   ^failover\s+replication
   ^\s*$$
-  ^. -> Error
 
 ThisHost
   ^Group\s+\d+\s+State:\s*${SERVICE_STATE}\s*$$
   ^\s*Active\s+time
   ^\s*slot\s+${SSP_SLOT}:\s+${SSP_MODEL}\s+.+?status\s+\(${SSP_STATUS}.*?\)\s*$$
-  ^\s*(${INTERFACES_CONTEXT}\s+|)Interface\s+${INTERFACES}.+?:\s+${INTERFACES_STATUS}(?:\s+\(${INTERFACES_STATE}\)|)\s*$$
+  ^\s*(${INTERFACES_CONTEXT}\s+|)Interface\s+${INTERFACES}.+?${INTERFACES_IP}.+?:\s+${INTERFACES_STATUS}(?:\s+\(${INTERFACES_STATE}\)|)\s*$$
   # Service module has different line
   ^\s*\S+,\s+\S+,\s+\S+\s*$$
   ^\s*Other\s+host:.+?-\s+${SERVICE_STATE_MATE}\s*$$ -> OtherHost
   ^\s*Other\s+host:\s+\S+\s*$$ -> OtherHost
   ^\s*slot\s+\d+:\s+empty\s*$$
   ^\s*$$
-  ^. -> Error
 
 OtherHost
   ^Group\s+\d+\s+State:\s*${SERVICE_STATE_MATE}\s*$$
   ^\s*Active\s+time
   ^\s*slot\s+${SSP_SLOT_MATE}:\s+${SSP_MODEL_MATE}\s+.+?status\s+\(${SSP_STATUS_MATE}.*?\)\s*$$
-  ^\s*(${INTERFACES_CONTEXT_MATE}\s+|)Interface\s+${INTERFACES_MATE}.+?:\s+${INTERFACES_STATUS_MATE}(?:\s+\(${INTERFACES_STATE_MATE}\)|)\s*$$
+  ^\s*(${INTERFACES_CONTEXT_MATE}\s+|)Interface\s+${INTERFACES_MATE}.+?${INTERFACES_IP_MATE}.+?:\s+${INTERFACES_STATUS_MATE}(?:\s+\(${INTERFACES_STATE_MATE}\)|)\s*$$
   # Service module has different line
   ^\s*\S+,\s+\S+,\s+\S+\s*$$
   ^\s*slot\s+\d+:\s+empty\s*$$
   ^Stateful\s+Failover\s+Logical\s+Update\s+Statistics\s*$$ -> Stats
   ^\s*$$
-  ^. -> Error
 
 Stats
   ^Link\s*:\s+
